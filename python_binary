@@ -1,0 +1,24 @@
+#number into binary
+import math
+
+#function
+# create function
+#set up list to place each returned remainder after division
+#set up while list to run until floor division reaches zero
+#set up remainders to only display digit before decimal
+#set up every remainder to be added to list
+#reverse order of list
+#decrement number by floor division of two each time
+def binary_conv(number):
+    bin_list=[]
+    while number //2 != 0:
+        mod_number=math.trunc(number%2)
+        for bin in bin_list:
+            list_bin=bin_list.append()
+        print(str(mod_number))
+        number = number//2
+     
+
+print(binary_conv(42))
+#binary_input=input("Enter the number you want to convert to to binary code ")
+#print("{} is {} in binary code".format(binary_input,binary_conv(binary_input)))
